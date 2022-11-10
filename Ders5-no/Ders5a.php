@@ -14,6 +14,7 @@ abstract:
 4. Sabitleri içerebilir.
 5. public, private ve protected tanımlanabilir.
 6. Herhangi bir sınıf sadece bir tane abstract class içerebilir.
+7. Abstract metotlar sadece abstract class içinde yazılmalıdır.
 
 interface: 
 1. Soyut metodlar içerebilir.
@@ -23,26 +24,42 @@ interface:
 
 */
 
+
 abstract class Deneme
 {
 
-    abstract public function tanimla($deger); 
-
+    abstract public function tanimla($deger);
 }
 
-class Myo extends Deneme
+
+/* Bu metot sınıfın kendi özelliklerine göre yazılmak zorundadır. */
+class MYO extends Deneme
 {
-    public function tanimla($deger)
+    public function tanimla($a)
     {
-        /* Bu fonksiyon tüm sınıflarda sınıfın kendi yapısına göre yazılmak zorundadır. */
+        echo "Merhaba";
+    }
+}
+
+class Muhendislik extends Deneme
+{
+    public function tanimla($a)
+    {
+        echo "Merhaba - Mühendislik";
+    }
+}
+
+
+class Egitim extends Deneme
+{
+    public function tanimla($a)
+    {
+        echo "Merhaba - Egitim";
     }
 }
 
 // hata kodu döndürür. Çünkü soyut sınıf içerisinde bulunan metotlar muhakkak soyut sınıftan türeyen alt sınıflarda da bulunmalıdır. Birden fazla bu sınıfı miras alan somut sınıf varsa miras alan tüm sınıflar bu metodu yazmak zorundadır.
-class Egitim extends Deneme
-{
-}
 
-class Muhendislik extends Deneme
+class YabanciDiller extends Deneme
 {
 }

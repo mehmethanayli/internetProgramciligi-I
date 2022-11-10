@@ -1,16 +1,15 @@
 <?php
-
-
 interface Ornek
 {
-    public function Tanim($deger);
+    public function tanim($deger);
 }
 
+/*Metot yazıldığı için hata oluşturmaz */
 class Contact implements Ornek
 {
-    public function Tanim($deger)
+    public function tanim($deger)
     {
-        /* Fonksiyon içeriği */
+        /* Fonksiyonun İçeriği */
     }
 }
 
