@@ -22,6 +22,24 @@ class Islemler
         $this->gider = $aylikGider;
     }
 
+    public function isimOku()
+    {
+        if ($this->isimSoyisim == Null) {
+            return "İsim Tanımlanmadı";
+        } else {
+            return $this->isimSoyisim;
+        }
+    }
+
+    public function gelirOku()
+    {
+        if ($this->gelir == NULL) {
+            return  "Gelir Tanımlanmadı.";
+        } else {
+            return $this->gelir;
+        }
+    }
+
 
     public function aylikDurumHesapla()
     {

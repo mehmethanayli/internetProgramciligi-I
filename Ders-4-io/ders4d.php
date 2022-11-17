@@ -40,3 +40,5 @@ class ElemanlarDahili2 extends ElemanlarDahili
 {
     /* Hata: Class ElemanlarDahili2 may not inherit from final class */
 }
+
+
