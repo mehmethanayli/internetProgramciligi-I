@@ -1,0 +1,27 @@
+Php'de Nesne temelli programlama.
+Class tanımlama.
+Nesne Oluşturma.
+Yapıcı ve Yıkıcı Metot tanımlama ve çalışma yapıları.
+Erişim belirleyiciler (public, private, protected)
+Sınıf içerisinde fonksiyon tanımlama ve oluşturulan nesnede sınıfın fonksiyonlarını kullanabilme.
+Self-Parent-this-final
+Miras alma.
+Metot overriding.
+İnterface
+Abstract Class
+
+Sql Konuları: 
+Distinct - Max - Min
+Inner Joın 
+Triger (after-before / insert-update-delete) 
+
+Codeigniter
+Config
+Routes
+Database
+Autoload
+Controller
+View
+Model
+.htaccess
+
